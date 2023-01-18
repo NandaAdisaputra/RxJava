@@ -37,10 +37,15 @@ android {
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
+
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+    //RxBinding adalah library yang digunakan untuk membuat Observable dari
+    // komponen User Interface seperti EditText, SearchView dan Radio Group.
+    implementation "com.jakewharton.rxbinding2:rxbinding:2.2.0"
+
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
